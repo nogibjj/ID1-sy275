@@ -1,53 +1,50 @@
 [![CI](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml)
 
-# Template for IDS706 weekly mini-projects 
+# Project #1: Continuous Integration using GitHub Actions of Python Data Science Project
 
 ## Goal
 
-This is a repo template for duke course IDS706 Data Engineering Mini Project (Fall 2023). It contains:
+> Duke University IDS 706 Individual Project 1
 
-`.devcontainer` includes a Dockerfile and devcontainer.json. The 'Dockerfile' within this folder specifies how the container should be built, and other settings in this directory may control development environment configurations.
-
-`workflows` includes GitHub Actions, which contain configuration files for setting up automated build, test, and deployment pipelines for your project.
-
-`.gitignore` is used to specify which files or directories should be excluded from version control when using Git.
-
-`Makefile` is a configuration file used in Unix-based systems for automating tasks and building software. It contains instructions and dependencies for compiling code, running tests, and other development tasks.
-
-`requirements.txt` is to specify the Python package dependencies (libraries and packages).
-
-`test_main.py` is a test file for main.py that can successfully run in IDEs.
-
-`Github Actions` to run the Makefile as follows: make install, make test, make format, make lint.
-
-
+The project structure must include the following files:
+-  Jupyter Notebook with: 
+  - Cells that perform descriptive statistics using Polars or Panda.
+  - Tested by using nbval plugin for pytest
+- Python Script performing the same descriptive statistics using Polars or Panda
+- lib.py file that shares the common code between the script and notebook
+- Makefile with the following: 
+  - Run all tests (must test notebook and script and lib)
+  - Formats code with Python black
+  - Lints code with Ruff
+  - Installs code via: pip install -r requirements.txt
+- test_script.py to test script
+- test_lib.py to test library
+- Pinned requirements.txt
+- GitHub Actions performs all four Makefile commands with badges for each one in
+the README.md
 
 
 ## Preparation
 
-1. Open in the Github codespaces
-2. Do simple test in the terminal
 
 ## Run and Result
 
-This section is saved for later mini projects.
-🌰 Example in the Github Codespace 
 
 make format
-
-![Make Formate Img](image.png)
 
 
 make lint
 
-![Lint Test](image-1.png)
 
 make test
 
-![Test Result](image-2.png)
 
 ## Reference
 
 1.  https://github.com/nogibjj/python-template
-2.  https://github.com/helenyjx/Rust-Powered-Calculator-Microservice-in-the-Cloud
+
+
+## Youtube Video Link
+
+
 
