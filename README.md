@@ -2,7 +2,7 @@
 [![Install](https://github.com/nogibjj/IP1-sy275/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/install.yml)
 [![Lint](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml)
 [![Format](https://github.com/nogibjj/IP1-sy275/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/format.yml)
-[![Test](https://github.com/nogibjj/IP1-sy275/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/test.yml)
+[![Test](https://github.com/nogibjj/IP1-sy275/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/nogibjj/IP1-sy275/actions/workflows/test.yml)
 
 ## Goal
 
@@ -72,6 +72,10 @@ The data visualization, the histogram of the `Salary` of the dataset:
 Test for python script:
 
 ![img_4.png](img_4.png)
+
+Test for jupyter notebook:
+
+![img_5.png](img_5.png)
 
 
 ## Reference
