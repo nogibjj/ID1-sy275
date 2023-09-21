@@ -55,9 +55,11 @@ the README.md
 ### Result
 
 To show correctly reading the dataset, I use the head() function to display the first
+
 ![img_2.png](img_2.png)
 
 Further, I display the statistics of the dataset with median added:
+
 ![img_3.png](img_3.png)
 
 
@@ -68,6 +70,7 @@ The data visualization, the histogram of the `Salary` of the dataset:
 
 ## Test
 Test for python script:
+
 ![img_4.png](img_4.png)
 
 
