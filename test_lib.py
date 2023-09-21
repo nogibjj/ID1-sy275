@@ -19,14 +19,16 @@ class TestMainMethods(unittest.TestCase):
         # Since this function just prints, we can capture print outputs and verify
         with patch("builtins.print") as mock_print:
             lib.display_basic_statistics(self.data)
-            self.assertEqual(mock_print.call_count, 3)  # Ensure print was called four times
+            # Ensure print was called four times
+            self.assertEqual(mock_print.call_count, 3)
 
     @patch("matplotlib.pyplot.show")
     @patch("matplotlib.pyplot.ylabel")
     @patch("matplotlib.pyplot.xlabel")
     @patch("matplotlib.pyplot.title")
     @patch.object(pd.Series, "plot")
-    def test_create_visualization(self, mock_plot, mock_title, mock_xlabel, mock_ylabel, mock_show):
+    def test_create_visualization(self, mock_plot, mock_title,
+                                  mock_xlabel, mock_ylabel, mock_show):
         lib.create_visualization(self.data)
         mock_plot.assert_called_once()
         mock_title.assert_called_once_with('Salary Distribution')

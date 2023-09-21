@@ -1,8 +1,10 @@
 """
-App entry point: Python Script file which perform the descriptive statistics on the data by Pandas and Matplotlib
+App entry point: Python Script file which perform the descriptive statistics
+                on the data by Pandas and Matplotlib
 
 # Note: This script assumes that all columns in data.csv are numeric.
-# If there are non-numeric columns, you'd need to handle or exclude them when computing these statistics.
+# If there are non-numeric columns, you'd need to handle
+    or exclude them when computing these statistics.
 """
 
 import lib
