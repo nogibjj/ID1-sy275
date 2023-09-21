@@ -50,9 +50,25 @@ the README.md
 7. `requirements.txt` : pinned requirements
 8. `README.md` : badges for each makefile command
 
-## Run and Result
+## Result and Test
+
+### Result
+
+To show correctly reading the dataset, I use the head() function to display the first
+![img_2.png](img_2.png)
+
+Further, I display the statistics of the dataset with median added:
+![img_3.png](img_3.png)
 
 
+The data visualization, the histogram of the `Salary` of the dataset:
+
+![img_1.png](img_1.png)
+
+
+## Test
+Test for python script:
+![img_4.png](img_4.png)
 
 
 ## Reference
