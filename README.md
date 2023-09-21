@@ -1,8 +1,10 @@
 # Project #1: Continuous Integration using GitHub Actions of Python Data Science Project
 [![Install](https://github.com/nogibjj/IP1-sy275/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/install.yml)
-[![Lint](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml)
+[![Lint](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml)
+[![Container-Lint](https://github.com/nogibjj/IP1-sy275/actions/workflows/container.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/container.yml)
 [![Format](https://github.com/nogibjj/IP1-sy275/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/format.yml)
 [![Test](https://github.com/nogibjj/IP1-sy275/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/nogibjj/IP1-sy275/actions/workflows/test.yml)
+[![Deploy](https://github.com/nogibjj/IP1-sy275/actions/workflows/deploy.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/deploy.yml)
 
 ## Goal
 
@@ -34,11 +36,11 @@ the README.md
 4. matplotlib.pyplot 
 5. The dataset file is as follow:
 
-![img.png](img.png)
+![img.png](img/img.png)
 
 ## Explanation
 1. jupyter notebook: `Project1.ipynb` perform descriptive statistics using Pandas
-2. python script: `main.py` which is same as the main.py in my mini project 2
+2. python script: `script.py` which is same as the main.py in my mini project 2
 3. lib file: `lib.py` which share the common code betwwen the python script and jupyter notebook
 4. makefile : `Makefile` which performs
    - `make test` : run all tests including notebook, script and lib
@@ -50,32 +52,34 @@ the README.md
 7. `requirements.txt` : pinned requirements
 8. `README.md` : badges for each makefile command
 
+> In a word, all requirements are fulfilled as described in the 'Goal'.
+
 ## Result and Test
 
 ### Result
 
 To show correctly reading the dataset, I use the head() function to display the first
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 Further, I display the statistics of the dataset with median added:
 
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 
 The data visualization, the histogram of the `Salary` of the dataset:
 
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 
 ## Test
 Test for python script:
 
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 
 Test for jupyter notebook:
 
-![img_5.png](img_5.png)
+![img_5.png](img/img_5.png)
 
 
 ## Reference

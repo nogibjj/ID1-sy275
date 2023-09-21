@@ -11,11 +11,11 @@ class TestLibFunctions(unittest.TestCase):
         self.assertIsInstance(data, pd.DataFrame)
         self.assertGreater(len(data), 0)
 
-
     # This is a mock test for demonstration. Replace it with your actual testing logic.
     def test_display_dataset_head(self):
         result = script.lib.display_dataset_head(script.lib.load_data('data.csv'))
         self.assertIsNotNone(result)
+
 
 class TestScript(unittest.TestCase):
 
@@ -49,6 +49,7 @@ class TestScript(unittest.TestCase):
         mock_print.assert_any_call("Basic Descriptive Statistics:")
         mock_print.assert_any_call("Statistics")
         mock_print.assert_any_call("\n")
+
 
 if __name__ == '__main__':
     unittest.main()

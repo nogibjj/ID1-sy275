@@ -24,7 +24,6 @@ class TestDataFunctions(unittest.TestCase):
         stats = lib.display_basic_statistics(self.data)
         # Check if basic statistics includes the median
         self.assertIn('median', stats.index)
-        # Further assertions can be made based on the expected content of data.csv
 
     @patch.object(plt, 'show')
     def test_create_visualization(self, mock_show):

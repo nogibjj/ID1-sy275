@@ -1,4 +1,6 @@
-# File that shares the common code between the script and notebook
+"""
+File that shares the common code between the script and notebook
+"""
 import pandas as pd
 import matplotlib.pyplot as plt
 
