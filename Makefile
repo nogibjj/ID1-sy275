@@ -3,8 +3,8 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=lib test_*.py
-	pytest --nbval -v Project1.ipynb
+	python -m pytest -vv --cov=lib test_*.py # test both lib and script
+	pytest --nbval -v Project1.ipynb # test jupyter notebook
 
 format:	
 	black *.py
