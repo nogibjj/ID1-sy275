@@ -12,8 +12,15 @@ import lib
 
 def main():
     data = lib.load_data('data.csv')
-    lib.display_dataset_head(data)
-    lib.display_basic_statistics(data)
+
+    print("Dataset Head:")
+    print(lib.display_dataset_head(data))
+    print("\n")
+
+    print("Basic Descriptive Statistics:")
+    print(lib.display_basic_statistics(data))
+    print("\n")
+
     lib.create_visualization(data)
 
 

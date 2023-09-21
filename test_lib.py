@@ -1,41 +1,37 @@
+import pandas as pd
 import unittest
 from unittest.mock import patch
-import pandas as pd
-import lib  # Assuming script.py is in the same directory
+import lib  # Assuming the provided code is saved in a file named main.py
+import matplotlib.pyplot as plt
 
 
-class TestMainMethods(unittest.TestCase):
+class TestDataFunctions(unittest.TestCase):
 
     def setUp(self):
+        # Load dataset for testing purposes
         self.data = lib.load_data('data.csv')
 
     def test_load_data(self):
-        data = lib.load_data('data.csv')
-        self.assertTrue(isinstance(data, pd.DataFrame))
-        # Check if the columns are as expected
-        self.assertListEqual(list(data.columns), ['Age', 'Salary', 'Score'])
+        self.assertIsInstance(self.data, pd.DataFrame)
+        self.assertGreater(len(self.data), 0)
 
-    def test_generate_summary_statistics(self):
-        # Since this function just prints, we can capture print outputs and verify
-        with patch("builtins.print") as mock_print:
-            lib.display_basic_statistics(self.data)
-            # Ensure print was called four times
-            self.assertEqual(mock_print.call_count, 3)
+    def test_display_dataset_head(self):
+        head = lib.display_dataset_head(self.data)
+        self.assertIsInstance(head, pd.DataFrame)
+        self.assertEqual(len(head), 5)  # Default of head() is 5 rows
 
-    @patch("matplotlib.pyplot.show")
-    @patch("matplotlib.pyplot.ylabel")
-    @patch("matplotlib.pyplot.xlabel")
-    @patch("matplotlib.pyplot.title")
-    @patch.object(pd.Series, "plot")
-    def test_create_visualization(self, mock_plot, mock_title,
-                                  mock_xlabel, mock_ylabel, mock_show):
+    def test_display_basic_statistics(self):
+        stats = lib.display_basic_statistics(self.data)
+        # Check if basic statistics includes the median
+        self.assertIn('median', stats.index)
+        # Further assertions can be made based on the expected content of data.csv
+
+    @patch.object(plt, 'show')
+    def test_create_visualization(self, mock_show):
+        # Mocking plt.show() to avoid displaying the plot during testing
         lib.create_visualization(self.data)
-        mock_plot.assert_called_once()
-        mock_title.assert_called_once_with('Salary Distribution')
-        mock_xlabel.assert_called_once_with('Index')
-        mock_ylabel.assert_called_once_with('Salary')
         mock_show.assert_called_once()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

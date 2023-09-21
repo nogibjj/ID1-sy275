@@ -8,17 +8,13 @@ def load_data(filename):
 
 
 def display_dataset_head(data):
-    print("Dataset Head:")
-    print(data.head())
-    print("\n")
+    return data.head()
 
 
 def display_basic_statistics(data):
-    print("Basic Descriptive Statistics:")
     description = data.describe().round(2)
     description.loc['median'] = data.median()
-    print(description)
-    print("\n")
+    return description
 
 
 def create_visualization(data):
