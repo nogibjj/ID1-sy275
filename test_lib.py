@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 import pandas as pd
-import lib  # Assuming main.py is in the same directory
+import lib  # Assuming script.py is in the same directory
 
 
 class TestMainMethods(unittest.TestCase):
@@ -18,8 +18,8 @@ class TestMainMethods(unittest.TestCase):
     def test_generate_summary_statistics(self):
         # Since this function just prints, we can capture print outputs and verify
         with patch("builtins.print") as mock_print:
-            lib.generate_summary_statistics(self.data)
-            self.assertEqual(mock_print.call_count, 4)  # Ensure print was called four times
+            lib.display_basic_statistics(self.data)
+            self.assertEqual(mock_print.call_count, 3)  # Ensure print was called four times
 
     @patch("matplotlib.pyplot.show")
     @patch("matplotlib.pyplot.ylabel")

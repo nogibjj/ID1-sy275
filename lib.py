@@ -15,14 +15,9 @@ def display_dataset_head(data):
 
 def display_basic_statistics(data):
     print("Basic Descriptive Statistics:")
-    print(data.describe())
-    print("\n")
-
-
-def generate_summary_statistics(data):
-    print("Mean:\n", data.mean())
-    print("\nMedian:\n", data.median())
-    print("\nStandard Deviation:\n", data.std())
+    description = data.describe().round(2)
+    description.loc['median'] = data.median()
+    print(description)
     print("\n")
 
 

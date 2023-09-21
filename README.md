@@ -32,17 +32,31 @@ the README.md
 
 ## Preparation
 
+1. make sure a data.csv file is in the same directory as main.py
+2. Python 3 or above
+3. Pandas
+4. matplotlib.pyplot 
+5. The dataset file is as follow:
+
+![img.png](img.png)
+
+## Explanation
+1. jupyter notebook: `Project1.ipynb` perform descriptive statistics using Pandas
+2. python script: `main.py` which is same as the main.py in my mini project 2
+3. lib file: `lib.py` which share the common code betwwen the python script and jupyter notebook
+4. makefile : `Makefile` which performs
+   - `make test` : run all tests including notebook, script and lib
+   - `make format` : format the code using black
+   - `make lint` : lint the code using Ruff
+   - `make install` : install the required packages
+5. `test_script.py` : test the script
+6. `test_lib.py` : test the lib
+7. `requirements.txt` : pinned requirements
+8. `README.md` : badges for each makefile command
 
 ## Run and Result
 
 
-make format
-
-
-make lint
-
-
-make test
 
 
 ## Reference
@@ -52,5 +66,5 @@ make test
 
 ## Youtube Video Link
 
-
+//TODO add youtube link here
 

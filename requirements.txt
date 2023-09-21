@@ -11,5 +11,7 @@ uvicorn==0.18.3
 # data
 pandas
 matplotlib
-
+#test
+nbval
+ruff
 

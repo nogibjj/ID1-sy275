@@ -12,7 +12,6 @@ def main():
     data = lib.load_data('data.csv')
     lib.display_dataset_head(data)
     lib.display_basic_statistics(data)
-    lib.generate_summary_statistics(data)
     lib.create_visualization(data)
 
 
