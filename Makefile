@@ -4,7 +4,7 @@ install:
 
 test:
 	python -m pytest -vv --cov=lib test_*.py
-	python -nbval -v Project1.ipynb
+	pytest -nbval -v Project1.ipynb
 
 format:	
 	black *.py
