@@ -1,4 +1,5 @@
 # Project #1: Continuous Integration using GitHub Actions of Python Data Science Project
+
 [![Install](https://github.com/nogibjj/IP1-sy275/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/install.yml)
 [![Lint](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml)
 [![Format](https://github.com/nogibjj/IP1-sy275/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/format.yml)
@@ -88,5 +89,7 @@ Test for jupyter notebook:
 
 ## Youtube Video Link
 
-//TODO add youtube link here
+https://youtu.be/sav_cbsb2Is
+
+Thank you for watching!
 
