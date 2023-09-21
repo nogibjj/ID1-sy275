@@ -1,7 +1,6 @@
 # Project #1: Continuous Integration using GitHub Actions of Python Data Science Project
 [![Install](https://github.com/nogibjj/IP1-sy275/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/install.yml)
 [![Lint](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/nogibjj/IP1-sy275/actions/workflows/lint.yml)
-[![Container-Lint](https://github.com/nogibjj/IP1-sy275/actions/workflows/container.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/container.yml)
 [![Format](https://github.com/nogibjj/IP1-sy275/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/format.yml)
 [![Test](https://github.com/nogibjj/IP1-sy275/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/nogibjj/IP1-sy275/actions/workflows/test.yml)
 [![Deploy](https://github.com/nogibjj/IP1-sy275/actions/workflows/deploy.yml/badge.svg)](https://github.com/nogibjj/IP1-sy275/actions/workflows/deploy.yml)
