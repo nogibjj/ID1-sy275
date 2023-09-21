@@ -23,7 +23,8 @@ class TestScript(unittest.TestCase):
     @patch('script.lib.display_dataset_head')
     @patch('script.lib.display_basic_statistics')
     @patch('script.lib.create_visualization')
-    def test_main_function(self, mock_create_visualization, mock_display_basic_statistics, mock_display_dataset_head, mock_load_data):
+    def test_main_function(self, mock_create_visualization,
+                           mock_display_basic_statistics, mock_display_dataset_head, mock_load_data):
         # Mocking the return values
         mock_data = Mock()
         mock_load_data.return_value = mock_data
